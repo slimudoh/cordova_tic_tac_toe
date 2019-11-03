@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <title>TicTacToe</title>
+</head>
+<body>
+
+<div class="section">
+
+    <div class="logo">
+        <img src="images/logo.png">
+    </div>
+
+    <div id='parent_frame'>
+        <div id='initial_frame' class='containier frame'>
+            <div class='row'>
+                <div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>              
+
+                    <p>What would you like to play as?</p>
+
+                    <p>
+                        <div class='option_links' id='player-x'>X</div> 
+                         
+                        <div class='option_links' id='player-o'>O</div>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id='game_frame' class='containier frame'>
+
+            <div id='score_panel'>
+                <p>
+                    <div class="score-line">
+                         Computer: <span id='comp_score'> </span> 
+                        You: <span id='human_score'> </span> 
+                    </div>                 
+                </p>
+            </div>
+            <p><div id='turns'></div></p>
+
+            <div id='game_panel'>
+                <div class='row'>
+                    <div id='1-cell' class='col-xs-4 col-sm-4 col-md-4 col-lg-4 cell cell-1'>
+                        <span id='1-cell-val'></span>
+                    </div>
+                    <div id='2-cell' class='col-xs-4 col-sm-4 col-md-4 col-lg-4 cell cell-2'>
+                        <span id='2-cell-val'></span>
+                    </div>
+                    <div id='3-cell' class='col-xs-4 col-sm-4 col-md-4 col-lg-4 cell cell-3'>
+                        <span id='3-cell-val'></span>
+                    </div>
+
+                    <div id='4-cell' class='col-xs-4 col-sm-4 col-md-4 col-lg-4 cell cell-4'>
+                        <span id='4-cell-val'></span>
+                    </div>
+                    <div id='5-cell' class='col-xs-4 col-sm-4 col-md-4 col-lg-4 cell cell-5'>
+                        <span id='5-cell-val'></span>
+                    </div>
+                    <div id='6-cell' class='col-xs-4 col-sm-4 col-md-4 col-lg-4 cell cell-6'>
+                        <span id='6-cell-val'></span>
+                    </div>
+
+                    <div id='7-cell' class='col-xs-4 col-sm-4 col-md-4 col-lg-4 cell cell-7'>
+                        <span id='7-cell-val'></span>
+                    </div>
+                    <div id='8-cell' class='col-xs-4 col-sm-4 col-md-4 col-lg-4 cell cell-8'>
+                        <span id='8-cell-val'></span>
+                    </div>
+                    <div id='9-cell' class='col-xs-4 col-sm-4 col-md-4 col-lg-4 cell cell-9'>
+                        <span id='9-cell-val'></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class='reset_links' id='reset_game'>Reset</div>
+
+        </div>
+
+        <div id='end_frame' class='containier frame'>
+            <div class='row'>
+                <div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+                    <div id='win_status'></div>
+                    <p>
+                        <div class='dialog-opt' id='continue_game'>Continue  </div>
+                        <div class='dialog-opt' id='restart_game'>  Restart</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="scripts/platformOverrides.js"></script>
+<script type="text/javascript" src="scripts/index.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+</body>
+</html>

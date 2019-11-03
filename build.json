@@ -1,0 +1,11 @@
+{
+     "android": {
+         "release": {
+             "keystore": "c:\\tictactoe.keystore",
+             "storePassword": "obalende",
+             "alias": "slim",
+             "password" : "obalende",
+             "keystoreType": ""
+         }
+     }
+ }
